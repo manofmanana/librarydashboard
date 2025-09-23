@@ -1,0 +1,112 @@
+/* =====================
+   Global Styles
+===================== */
+body {
+    background-color: #3b2a1a; /* dark brown background */
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+}
+
+/* =====================
+   Metric Cards
+===================== */
+.metric-card {
+    background-color: #1a2a44;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    font-size: 1em;
+    opacity: 0;
+    animation: fadeInUp 1.2s ease forwards;
+}
+
+.metric-card:nth-child(1) { animation-delay: 0.2s; }
+.metric-card:nth-child(2) { animation-delay: 0.4s; }
+.metric-card:nth-child(3) { animation-delay: 0.6s; }
+.metric-card:nth-child(4) { animation-delay: 0.8s; }
+
+/* =====================
+   Hero Banner Animation
+===================== */
+.hero-banner {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-banner img {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-banner h1,
+.hero-banner p {
+    animation: fadeInUp 2s ease-in-out;
+}
+
+/* =====================
+   Book Covers
+===================== */
+.book-cover {
+    opacity: 0;
+    transform: scale(0.95);
+    animation: fadeInZoom 1s ease forwards;
+}
+
+.book-cover:nth-child(1) { animation-delay: 0.1s; }
+.book-cover:nth-child(2) { animation-delay: 0.2s; }
+.book-cover:nth-child(3) { animation-delay: 0.3s; }
+.book-cover:nth-child(4) { animation-delay: 0.4s; }
+.book-cover:nth-child(5) { animation-delay: 0.5s; }
+
+/* =====================
+   Charts
+===================== */
+.chart-container {
+    opacity: 0;
+    animation: fadeInUp 1.5s ease forwards;
+}
+
+/* =====================
+   Animations
+===================== */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { 
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInZoom {
+    from { 
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to { 
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* =====================
+   DataFrame Styling
+===================== */
+.stDataFrame {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* =====================
+   Sidebar
+===================== */
+.css-1d391kg, .stSidebar {
+    background-color: #2a1e13 !important; /* darker brown */
+}
