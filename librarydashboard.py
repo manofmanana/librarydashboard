@@ -130,7 +130,7 @@ if os.path.exists(banner_path):
                  style="width:100%; height:auto; border-radius: 0 0 12px 12px; filter: brightness(60%);">
             <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
                         color: white; text-align: center; padding: 0 20px;">
-                <h1 style="font-size: 3em; margin-bottom: 0.3em;">Alejandro's Library 📚</h1>
+                <h1 style="font-size: 3em; margin-bottom: 0.3em;">Alejandro's Library</h1>
                 <p style="font-size: 1.2em; margin: 0;">A dashboard tracking my reading journey across years, genres, and ideas.</p>
             </div>
         </div>

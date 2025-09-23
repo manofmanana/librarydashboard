@@ -1,11 +1,11 @@
-# 📚 Alejandro's Library Dashboard
+# Alejandro's Library Dashboard
 
 A **Streamlit-powered data science dashboard** to track my reading journey across years, genres, and ideas.  
 It combines **SQLite**, **Google Books API**, and **Plotly visualizations** to show insights into my reading habits.
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Hero Banner with Overlay Text**  
   Displays a custom banner image with the project title and description.  
@@ -42,7 +42,7 @@ It combines **SQLite**, **Google Books API**, and **Plotly visualizations** to s
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - [Python](https://www.python.org/)  
 - [Streamlit](https://streamlit.io/)  
@@ -53,7 +53,7 @@ It combines **SQLite**, **Google Books API**, and **Plotly visualizations** to s
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 my_dashboard/
 │
 ├── librarydashboard.py # Main Streamlit app
@@ -70,7 +70,7 @@ my_dashboard/
 
 ---
 
-## ⚙️ Setup
+## Setup
 
 1. Clone the repository or move into your project folder:  
    ```bash
