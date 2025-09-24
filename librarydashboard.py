@@ -413,6 +413,7 @@ if password == "JulietA":
                                            value=default_year)
                 new_rating = st.slider("Edit Rating", 0.0, 5.0,
                                        float(row["rating"]) if pd.notnull(row["rating"]) else 4.0, 0.1)
+                new_genre = st.text_input("Edit Genre", value=row["genre"] or "Unknown")
                 new_isbn = st.text_input("Edit ISBN (optional)", value=row["isbn"] or "")
                 do_refetch = st.checkbox("Re-fetch cover automatically", value=True)
                 save_changes = st.form_submit_button("Save Changes")
@@ -427,9 +428,9 @@ if password == "JulietA":
                         isbn_final = fetched.get("isbn") or isbn_final
                     c.execute(
                         """UPDATE books
-                           SET title=?, author=?, year=?, rating=?, isbn=?, subjects=?, cover_url=?
+                           SET title=?, author=?, year=?, genre=?, rating=?, isbn=?, subjects=?, cover_url=?
                            WHERE id=?""",
-                        (new_title, new_author, int(new_year), float(new_rating),
+                        (new_title, new_author, int(new_year), new_genre, float(new_rating),
                          isbn_final, subjects, cover_url, int(row["id"]))
                     )
                     conn.commit()
